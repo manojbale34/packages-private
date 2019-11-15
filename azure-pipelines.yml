@@ -3,8 +3,8 @@ name: $(build.SourceBranchName)-init
 variables:
 - name: System.Debug
   value: true
-#- name: Package.Feed
-#  value: 'Stacks'
+- name: Package.Feed
+  value: 'test'
 ## Versioning
 #- name: Version.Major
 #  value: 0
@@ -66,7 +66,8 @@ stages:
 #  - group: amido-stacks-infra-credentials-nonprod
   jobs:
   - template: build-pack-test-dotnet.yml@templates_public
-#    parameters:
+    parameters:
+     package_feed: '$(Package.Feed)'
 #      # Version Config
 #      sourcebranch_name: '$(Build.SourceBranchName)'
 #      raw_version_number: '$(Version.Number)'
@@ -74,7 +75,7 @@ stages:
 #      test_path: '$(Test.Path)'
 #      package_path: '$(Package.Path)'
 #      # Deploy Config
-#      package_feed: '$(Package.Feed)'
+      package_feed: '$(Package.Feed)'
 #      publish_symbols: true
 #      # Secret Config
 #      cosmosdb_secret: false

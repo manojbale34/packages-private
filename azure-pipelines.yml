@@ -75,7 +75,7 @@ stages:
 #      test_path: '$(Test.Path)'
 #      package_path: '$(Package.Path)'
 #      # Deploy Config
-      package_feed: '$(Package.Feed)'
+#      package_feed: '$(Package.Feed)'
 #      publish_symbols: true
 #      # Secret Config
 #      cosmosdb_secret: false

@@ -1,8 +1,8 @@
 name: $(build.SourceBranchName)-init
 ##
 ##variables:
-#- name: System.Debug
-#  value: true
+- name: System.Debug
+  value: true
 #- name: Package.Feed
 #  value: 'Stacks'
 ## Versioning

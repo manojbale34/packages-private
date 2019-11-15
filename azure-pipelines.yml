@@ -67,7 +67,7 @@ stages:
   jobs:
   - template: build-pack-test-dotnet.yml@templates_public
     parameters:
-     package_feed: '$(Package.Feed)'
+     package_feed: '$(Package.Path)'
 #      # Version Config
 #      sourcebranch_name: '$(Build.SourceBranchName)'
 #      raw_version_number: '$(Version.Number)'

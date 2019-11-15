@@ -1,0 +1,80 @@
+name: $(build.SourceBranchName)-init
+
+variables:
+- name: System.Debug
+  value: true
+- name: Package.Feed
+  value: 'Stacks'
+# Versioning
+- name: Version.Major
+  value: 0
+- name: Version.Minor
+  value: 0
+- name: Version.MajorMinor
+  value: $(Version.Major).$(Version.Minor)
+- name: Version.Revision
+  value: $[counter(variables['Version.MajorMinor'], 0)]
+- name: Version.Number
+  value: $(Version.Major).$(Version.Minor).$(Version.Revision)
+
+# DevOps Scripts Package Info
+- name: DevOps.File
+  value: scripts-1.1.0-master.tar.gz
+- name: DevOps.Container
+  value: packages
+- name: DevOps.storageAccount
+  value: amidostacksuksprod
+- name: DevOps.RG
+  value: amido-stacks-rg-uks-prod
+
+# Path specific for this package, change accordingly
+- name: Package.Feed
+  value: 'Stacks'
+- name: Package.Path
+  value: 'src/dotnet/Amido.Stacks.Testing'
+- name: BuildPipeline.Path
+  value: 'build/azDevOps/packages-amido-stacks-testing.yml'
+
+#Trigger paths specific for this package, change accordingly
+trigger:
+  branches:
+    include:
+    - master
+    - feature/*
+    - bug*
+  paths:
+    include:
+    - src/dotnet/Amido.Stacks.Testing/
+    - build/azDevOps/packages-amido-stacks-testing.yml
+    exclude:
+    - '*'
+
+# Only build PRs into Master
+pr:
+- master
+
+resources:
+  repositories:
+  - repository: templates
+    type: github
+    name: amido/stacks-pipeline-templates
+    endpoint: williamayerst # Created when you set up the connection to GitHub from Azure DevOps
+
+stages:
+- stage: BuildandDeploy
+  variables:
+  - group: amido-stacks-infra-credentials-nonprod
+  jobs:
+  - template: azDevOps/azure/templates/jobs/build-dotnet-package.yml@templates
+    parameters:
+      # Version Config
+      sourcebranch_name: '$(Build.SourceBranchName)'
+      raw_version_number: '$(Version.Number)'
+      # Build Config
+      test_path: '$(Test.Path)'
+      package_path: '$(Package.Path)'
+      # Deploy Config
+      package_feed: '$(Package.Feed)'
+      publish_symbols: true
+      # Secret Config
+      cosmosdb_secret: false

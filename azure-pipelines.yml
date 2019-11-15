@@ -65,7 +65,7 @@ stages:
 #  variables:
 #  - group: amido-stacks-infra-credentials-nonprod
   jobs:
-  - template: build-pack-test-dotnet.yml
+  - template: manojbale/templates-public
 #    parameters:
 #      # Version Config
 #      sourcebranch_name: '$(Build.SourceBranchName)'

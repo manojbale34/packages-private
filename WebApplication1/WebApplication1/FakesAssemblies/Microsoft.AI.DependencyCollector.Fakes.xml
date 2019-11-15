@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.AI.DependencyCollector.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule">
+            <summary>Shim type of Microsoft.ApplicationInsights.DependencyCollector.DependencyTrackingTelemetryModule</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.#ctor(Microsoft.ApplicationInsights.DependencyCollector.DependencyTrackingTelemetryModule)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.AllInstances.DisableRuntimeInstrumentationGet">
+            <summary>Sets the shim of DependencyTrackingTelemetryModule.get_DisableRuntimeInstrumentation()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.AllInstances.DisableRuntimeInstrumentationSetBoolean">
+            <summary>Sets the shim of DependencyTrackingTelemetryModule.set_DisableRuntimeInstrumentation(Boolean value)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.AllInstances.Dispose">
+            <summary>Sets the shim of DependencyTrackingTelemetryModule.Dispose()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.AllInstances.DisposeBoolean">
+            <summary>Sets the shim of DependencyTrackingTelemetryModule.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.AllInstances.InitializeForFrameworkEventSource">
+            <summary>Sets the shim of DependencyTrackingTelemetryModule.InitializeForFrameworkEventSource()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.AllInstances.InitializeForRuntimeInstrumentationOrFramework">
+            <summary>Sets the shim of DependencyTrackingTelemetryModule.InitializeForRuntimeInstrumentationOrFramework()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.AllInstances.InitializeForRuntimeProfiler">
+            <summary>Sets the shim of DependencyTrackingTelemetryModule.InitializeForRuntimeProfiler()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.AllInstances.InitializeTelemetryConfiguration">
+            <summary>Sets the shim of DependencyTrackingTelemetryModule.Initialize(TelemetryConfiguration configuration)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.AllInstances.IsProfilerAvailable">
+            <summary>Sets the shim of DependencyTrackingTelemetryModule.IsProfilerAvailable()</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.Bind(Microsoft.ApplicationInsights.Extensibility.ITelemetryModule)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.Constructor">
+            <summary>Sets the shim of DependencyTrackingTelemetryModule.DependencyTrackingTelemetryModule()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.DisableRuntimeInstrumentationGet">
+            <summary>Sets the shim of DependencyTrackingTelemetryModule.get_DisableRuntimeInstrumentation()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.DisableRuntimeInstrumentationSetBoolean">
+            <summary>Sets the shim of DependencyTrackingTelemetryModule.set_DisableRuntimeInstrumentation(Boolean value)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.Dispose">
+            <summary>Sets the shim of DependencyTrackingTelemetryModule.Dispose()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.DisposeBoolean">
+            <summary>Sets the shim of DependencyTrackingTelemetryModule.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.InitializeForFrameworkEventSource">
+            <summary>Sets the shim of DependencyTrackingTelemetryModule.InitializeForFrameworkEventSource()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.InitializeForRuntimeInstrumentationOrFramework">
+            <summary>Sets the shim of DependencyTrackingTelemetryModule.InitializeForRuntimeInstrumentationOrFramework()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.InitializeForRuntimeProfiler">
+            <summary>Sets the shim of DependencyTrackingTelemetryModule.InitializeForRuntimeProfiler()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.InitializeTelemetryConfiguration">
+            <summary>Sets the shim of DependencyTrackingTelemetryModule.Initialize(TelemetryConfiguration configuration)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimDependencyTrackingTelemetryModule.IsProfilerAvailable">
+            <summary>Sets the shim of DependencyTrackingTelemetryModule.IsProfilerAvailable()</summary>
+        </member>
+        <member name="T:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimTelemetryExtensionsForDependencyCollector">
+            <summary>Shim type of Microsoft.ApplicationInsights.DependencyCollector.TelemetryExtensionsForDependencyCollector</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimTelemetryExtensionsForDependencyCollector.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimTelemetryExtensionsForDependencyCollector.AssociateTelemetryWithSqlRequestDependencyTelemetrySqlCommand">
+            <summary>Sets the shim of TelemetryExtensionsForDependencyCollector.AssociateTelemetryWithSqlRequest(DependencyTelemetry telemetry, SqlCommand sqlRequest)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimTelemetryExtensionsForDependencyCollector.AssociateTelemetryWithWebRequestDependencyTelemetryWebRequestBooleanBoolean">
+            <summary>Sets the shim of TelemetryExtensionsForDependencyCollector.AssociateTelemetryWithWebRequest(DependencyTelemetry telemetry, WebRequest webRequest, Boolean setCookies, Boolean setCorrelationContext)</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimTelemetryExtensionsForDependencyCollector.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimTelemetryExtensionsForDependencyCollector.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.ShimTelemetryExtensionsForDependencyCollector.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="T:Microsoft.ApplicationInsights.DependencyCollector.Fakes.StubDependencyTrackingTelemetryModule">
+            <summary>Stub type of Microsoft.ApplicationInsights.DependencyCollector.DependencyTrackingTelemetryModule</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.DependencyCollector.Fakes.StubDependencyTrackingTelemetryModule.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.StubDependencyTrackingTelemetryModule.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.DependencyCollector.Fakes.StubDependencyTrackingTelemetryModule.Dispose(System.Boolean)">
+            <summary>Sets the stub of DependencyTrackingTelemetryModule.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:Microsoft.ApplicationInsights.DependencyCollector.Fakes.StubDependencyTrackingTelemetryModule.DisposeBoolean">
+            <summary>Sets the stub of DependencyTrackingTelemetryModule.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.DependencyCollector.Fakes.StubDependencyTrackingTelemetryModule.InitializeStub">
+            <summary>Initializes a new instance of type StubDependencyTrackingTelemetryModule</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.StubDependencyTrackingTelemetryModule.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.DependencyCollector.Fakes.StubDependencyTrackingTelemetryModule.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

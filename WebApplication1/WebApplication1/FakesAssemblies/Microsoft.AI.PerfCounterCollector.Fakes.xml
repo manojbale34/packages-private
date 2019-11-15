@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.AI.PerfCounterCollector.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule">
+            <summary>Shim type of Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.PerformanceCollectorModule</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.#ctor(Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.PerformanceCollectorModule)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.AllInstances.CountersGet">
+            <summary>Sets the shim of PerformanceCollectorModule.get_Counters()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.AllInstances.CountersSetIListOfPerformanceCounterCollectionRequest">
+            <summary>Sets the shim of PerformanceCollectorModule.set_Counters(IList`1&lt;PerformanceCounterCollectionRequest&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.AllInstances.CreateCounterStringIEnumerableOfStringIEnumerableOfStringBooleanOutStringOut">
+            <summary>Sets the shim of PerformanceCollectorModule.CreateCounter(String perfCounterName, IEnumerable`1&lt;String&gt; win32Instances, IEnumerable`1&lt;String&gt; clrInstances, Boolean&amp; usesInstanceNamePlaceholder, String&amp; error)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.AllInstances.Dispose">
+            <summary>Sets the shim of PerformanceCollectorModule.Dispose()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.AllInstances.DisposeBoolean">
+            <summary>Sets the shim of PerformanceCollectorModule.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.AllInstances.EnableIISExpressPerformanceCountersGet">
+            <summary>Sets the shim of PerformanceCollectorModule.get_EnableIISExpressPerformanceCounters()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.AllInstances.EnableIISExpressPerformanceCountersSetBoolean">
+            <summary>Sets the shim of PerformanceCollectorModule.set_EnableIISExpressPerformanceCounters(Boolean value)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.AllInstances.EnsurePerformanceCountersRegistered">
+            <summary>Sets the shim of PerformanceCollectorModule.EnsurePerformanceCountersRegistered()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.AllInstances.InitializeTelemetryConfiguration">
+            <summary>Sets the shim of PerformanceCollectorModule.Initialize(TelemetryConfiguration configuration)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.AllInstances.ProcessCustomCounters">
+            <summary>Sets the shim of PerformanceCollectorModule.ProcessCustomCounters()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.AllInstances.RefreshCountersIEnumerableOfStringIEnumerableOfString">
+            <summary>Sets the shim of PerformanceCollectorModule.RefreshCounters(IEnumerable`1&lt;String&gt; win32Instances, IEnumerable`1&lt;String&gt; clrInstances)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.AllInstances.RegisterCounterStringStringIListOfStringIListOfStringBooleanStringOut">
+            <summary>Sets the shim of PerformanceCollectorModule.RegisterCounter(String perfCounterName, String reportAs, IList`1&lt;String&gt; win32Instances, IList`1&lt;String&gt; clrInstances, Boolean isCustomCounter, String&amp; error)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.AllInstances.RegisterCounterStringStringPerformanceCounterBooleanBooleanStringOut">
+            <summary>Sets the shim of PerformanceCollectorModule.RegisterCounter(String originalString, String reportAs, PerformanceCounter pc, Boolean isCustomCounter, Boolean usesInstanceNamePlaceholder, String&amp; error)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.AllInstances.SanitizeReportAsStringStringInt32Ref">
+            <summary>Sets the shim of PerformanceCollectorModule.SanitizeReportAs(String reportAs, String performanceCounter, Int32&amp; counterIndex)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.AllInstances.TimerCallbackObject">
+            <summary>Sets the shim of PerformanceCollectorModule.TimerCallback(Object state)</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.Bind(Microsoft.ApplicationInsights.Extensibility.ITelemetryModule)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.Constructor">
+            <summary>Sets the shim of PerformanceCollectorModule.PerformanceCollectorModule()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.CountersGet">
+            <summary>Sets the shim of PerformanceCollectorModule.get_Counters()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.CountersSetIListOfPerformanceCounterCollectionRequest">
+            <summary>Sets the shim of PerformanceCollectorModule.set_Counters(IList`1&lt;PerformanceCounterCollectionRequest&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.CreateCounterStringIEnumerableOfStringIEnumerableOfStringBooleanOutStringOut">
+            <summary>Sets the shim of PerformanceCollectorModule.CreateCounter(String perfCounterName, IEnumerable`1&lt;String&gt; win32Instances, IEnumerable`1&lt;String&gt; clrInstances, Boolean&amp; usesInstanceNamePlaceholder, String&amp; error)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.CreateTelemetryPerformanceCounterStringBooleanSingle">
+            <summary>Sets the shim of PerformanceCollectorModule.CreateTelemetry(PerformanceCounter pc, String reportAs, Boolean isCustomCounter, Single value)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.Dispose">
+            <summary>Sets the shim of PerformanceCollectorModule.Dispose()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.DisposeBoolean">
+            <summary>Sets the shim of PerformanceCollectorModule.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.EnableIISExpressPerformanceCountersGet">
+            <summary>Sets the shim of PerformanceCollectorModule.get_EnableIISExpressPerformanceCounters()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.EnableIISExpressPerformanceCountersSetBoolean">
+            <summary>Sets the shim of PerformanceCollectorModule.set_EnableIISExpressPerformanceCounters(Boolean value)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.EnsurePerformanceCountersRegistered">
+            <summary>Sets the shim of PerformanceCollectorModule.EnsurePerformanceCountersRegistered()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.InitializeTelemetryConfiguration">
+            <summary>Sets the shim of PerformanceCollectorModule.Initialize(TelemetryConfiguration configuration)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.IsRunningUnderIisExpress">
+            <summary>Sets the shim of PerformanceCollectorModule.IsRunningUnderIisExpress()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.ProcessCustomCounters">
+            <summary>Sets the shim of PerformanceCollectorModule.ProcessCustomCounters()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.RefreshCountersIEnumerableOfStringIEnumerableOfString">
+            <summary>Sets the shim of PerformanceCollectorModule.RefreshCounters(IEnumerable`1&lt;String&gt; win32Instances, IEnumerable`1&lt;String&gt; clrInstances)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.RegisterCounterStringStringIListOfStringIListOfStringBooleanStringOut">
+            <summary>Sets the shim of PerformanceCollectorModule.RegisterCounter(String perfCounterName, String reportAs, IList`1&lt;String&gt; win32Instances, IList`1&lt;String&gt; clrInstances, Boolean isCustomCounter, String&amp; error)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.RegisterCounterStringStringPerformanceCounterBooleanBooleanStringOut">
+            <summary>Sets the shim of PerformanceCollectorModule.RegisterCounter(String originalString, String reportAs, PerformanceCounter pc, Boolean isCustomCounter, Boolean usesInstanceNamePlaceholder, String&amp; error)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.SanitizeReportAsStringStringInt32Ref">
+            <summary>Sets the shim of PerformanceCollectorModule.SanitizeReportAs(String reportAs, String performanceCounter, Int32&amp; counterIndex)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.StaticConstructor">
+            <summary>Sets the shim of PerformanceCollectorModule.PerformanceCollectorModule()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCollectorModule.TimerCallbackObject">
+            <summary>Sets the shim of PerformanceCollectorModule.TimerCallback(Object state)</summary>
+        </member>
+        <member name="T:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCounterCollectionRequest">
+            <summary>Shim type of Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.PerformanceCounterCollectionRequest</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCounterCollectionRequest.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCounterCollectionRequest.#ctor(Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.PerformanceCounterCollectionRequest)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCounterCollectionRequest.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCounterCollectionRequest.AllInstances.PerformanceCounterGet">
+            <summary>Sets the shim of PerformanceCounterCollectionRequest.get_PerformanceCounter()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCounterCollectionRequest.AllInstances.PerformanceCounterSetString">
+            <summary>Sets the shim of PerformanceCounterCollectionRequest.set_PerformanceCounter(String value)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCounterCollectionRequest.AllInstances.ReportAsGet">
+            <summary>Sets the shim of PerformanceCounterCollectionRequest.get_ReportAs()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCounterCollectionRequest.AllInstances.ReportAsSetString">
+            <summary>Sets the shim of PerformanceCounterCollectionRequest.set_ReportAs(String value)</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCounterCollectionRequest.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCounterCollectionRequest.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCounterCollectionRequest.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCounterCollectionRequest.Constructor">
+            <summary>Sets the shim of PerformanceCounterCollectionRequest.PerformanceCounterCollectionRequest()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCounterCollectionRequest.ConstructorStringString">
+            <summary>Sets the shim of PerformanceCounterCollectionRequest.PerformanceCounterCollectionRequest(String performanceCounter, String reportAs)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCounterCollectionRequest.PerformanceCounterGet">
+            <summary>Sets the shim of PerformanceCounterCollectionRequest.get_PerformanceCounter()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCounterCollectionRequest.PerformanceCounterSetString">
+            <summary>Sets the shim of PerformanceCounterCollectionRequest.set_PerformanceCounter(String value)</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCounterCollectionRequest.ReportAsGet">
+            <summary>Sets the shim of PerformanceCounterCollectionRequest.get_ReportAs()</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.ShimPerformanceCounterCollectionRequest.ReportAsSetString">
+            <summary>Sets the shim of PerformanceCounterCollectionRequest.set_ReportAs(String value)</summary>
+        </member>
+        <member name="T:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.StubPerformanceCounterCollectionRequest">
+            <summary>Stub type of Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.PerformanceCounterCollectionRequest</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.StubPerformanceCounterCollectionRequest.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.StubPerformanceCounterCollectionRequest.#ctor(System.String,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.StubPerformanceCounterCollectionRequest.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.StubPerformanceCounterCollectionRequest.InitializeStub">
+            <summary>Initializes a new instance of type StubPerformanceCounterCollectionRequest</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.StubPerformanceCounterCollectionRequest.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.Fakes.StubPerformanceCounterCollectionRequest.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

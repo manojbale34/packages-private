@@ -55,7 +55,7 @@ pr:
 
 resources:
   repositories:
-  - repository: templates-public
+  - repository: templates_public
     type: github
     name: manojbale/templates-public
     endpoint: manojbale # Created when you set up the connection to GitHub from Azure DevOps
@@ -65,7 +65,7 @@ stages:
 #  variables:
 #  - group: amido-stacks-infra-credentials-nonprod
   jobs:
-  - template: build-pack-test-dotnet.yml
+  - template: build-pack-test-dotnet.yml@templates_public
 #    parameters:
 #      # Version Config
 #      sourcebranch_name: '$(Build.SourceBranchName)'

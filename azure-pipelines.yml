@@ -58,7 +58,7 @@ resources:
   - repository: templates_public
     type: github
     name: manojbale/templates-public
-    endpoint: manojbale # Created when you set up the connection to GitHub from Azure DevOps
+    endpoint: github.com_manojbale # Created when you set up the connection to GitHub from Azure DevOps
 
 stages:
 - stage: BuildandDeploy

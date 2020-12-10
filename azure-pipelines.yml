@@ -1,10 +1,10 @@
 name: $(build.SourceBranchName)-init
-#####################
-variables:
-- name: System.Debug
-  value: true
-- name: Package.Feed
-  value: 'test'
+
+###variables:
+#- name: System.Debug
+#  value: true
+#- name: Package.Feed
+#  value: 'Stacks'
 ## Versioning
 #- name: Version.Major
 #  value: 0
@@ -53,21 +53,24 @@ trigger:
 pr:
 - master
 
-resources:
-  repositories:
-  - repository: templates_public
-    type: github
-    name: manojbale/templates-public
-    endpoint: github.com_manojbale # Created when you set up the connection to GitHub from Azure DevOps
+#resources:
+#  repositories:
+#  - repository: templates_public
+#    type: github
+#    name: manojbale/templates-public
+#    endpoint: manojbale # Created when you set up the connection to GitHub from Azure DevOps
 
-stages:
-- stage: BuildandDeploy
+steps:
+ - checkout: self
+#stages:
+#- stage: BuildandDeploy
+  
 #  variables:
 #  - group: amido-stacks-infra-credentials-nonprod
-  jobs:
-  - template: build-pack-test-dotnet.yml@templates_public
-    parameters:
-     package_feed: '$(Package.Feed)'
+#  jobs:
+#  - template: build-pack-test-dotnet.yml@templates_public
+#    parameters:
+#     package_feed: '$(Package.Path)'
 #      # Version Config
 #      sourcebranch_name: '$(Build.SourceBranchName)'
 #      raw_version_number: '$(Version.Number)'

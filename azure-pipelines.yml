@@ -1,6 +1,6 @@
 name: $(build.SourceBranchName)-init
 
-##variables:
+###variables:
 #- name: System.Debug
 #  value: true
 #- name: Package.Feed

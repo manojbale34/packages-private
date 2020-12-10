@@ -53,12 +53,12 @@ trigger:
 pr:
 - master
 
-resources:
-  repositories:
-  - repository: templates_public
-    type: github
-    name: manojbale/templates-public
-    endpoint: manojbale # Created when you set up the connection to GitHub from Azure DevOps
+#resources:
+#  repositories:
+#  - repository: templates_public
+#    type: github
+#    name: manojbale/templates-public
+#    endpoint: manojbale # Created when you set up the connection to GitHub from Azure DevOps
 
 stages:
 - stage: BuildandDeploy
